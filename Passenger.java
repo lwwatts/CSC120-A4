@@ -29,4 +29,8 @@ public class Passenger implements PassengerRequirements{
     public String toString(){
         return this.name;
     }
+
+    public static void main(String[] args) {
+        
+    }
 }

@@ -53,4 +53,8 @@ public class Train implements TrainRequirements{
             c.printManifest();
         }
     }
+
+    public static void main(String[] args){
+        
+    }
 }

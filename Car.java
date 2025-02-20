@@ -54,4 +54,8 @@ public class Car implements CarRequirements{
         }
     }
 
+    public static void main(String[] args) {
+        
+    }
+
 }
