@@ -26,7 +26,7 @@ public class Passenger implements PassengerRequirements{
         }
     }
 
-    public String getName(){
+    public String toString(){
         return this.name;
     }
 }
