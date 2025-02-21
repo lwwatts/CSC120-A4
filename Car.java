@@ -6,20 +6,37 @@ public class Car implements CarRequirements{
     private int maxCapacity;
     private ArrayList<Passenger> passengersOnBoard;
 
+    /**
+     * Constructs a new Car object
+     * @param cap the max number of passengers this car can seat
+     */
     public Car(int cap){
         this.maxCapacity = cap;
         this.passengersOnBoard = new ArrayList<Passenger>();
     }
 
+    /**
+     * An accessor method for the car's passenger capacity
+     * @return int: the number of people who can be seated in this car
+     */
     public int getCapacity(){
         return this.maxCapacity;
     }
 
+    /**
+     * Calculates how many empty seats are in the car
+     * @return int: the number of empty seats in the car
+     */
     public int seatsRemaining(){
         int seatsFull = this.passengersOnBoard.size();
         return (this.maxCapacity - seatsFull);
     }
 
+    /**
+     * Adds a given passenger to the car if the car is not full
+     * @param p the passenger to be added to the car
+     * @return T/F: whether or not the passenger has boarded the car
+     */
     public Boolean addPassenger(Passenger p){
         if(this.seatsRemaining() != 0 && !this.passengersOnBoard.contains(p)){
             this.passengersOnBoard.add(p);
@@ -31,6 +48,11 @@ public class Car implements CarRequirements{
         
     }
     
+    /**
+     * Removes a given passenger from the car if they are in the car
+     * @param p the passenger to be removed from the car
+     * @return T/F: whether or not the passenger has been removed from the car
+     */
     public Boolean removePassenger(Passenger p){
         if(this.passengersOnBoard.contains(p)){
             this.passengersOnBoard.remove(p);
@@ -42,6 +64,9 @@ public class Car implements CarRequirements{
 
     }
 
+    /**
+     * Prints out the list of passengers in the car, or prints an empty message if the car is empty
+     */
     public void printManifest(){
         if(this.passengersOnBoard.size() != 0){
             Iterator<Passenger> i = passengersOnBoard.iterator();
