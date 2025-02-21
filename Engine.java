@@ -4,28 +4,53 @@ public class Engine implements EngineRequirements{
     private double maxFuelLevel;
     private double currentFuelLevel;
 
+    /**
+     * Constructor
+     * @param fuel the type of fuel this engine uses
+     * @param currentFuel the amount of fuel that this engine currently has
+     * @param maxFuel the max amount of fuel this engine can hold
+     */
     public Engine(FuelType fuel, double currentFuel, double maxFuel){
         this.f = fuel;
         this.maxFuelLevel = maxFuel;
         this.currentFuelLevel = currentFuel;
     }
 
+    /**
+     * Sets the engine's current fuel level equal to the max fuel level
+     */
     public void refuel(){
         this.currentFuelLevel = maxFuelLevel;
     }
 
+    /**
+     * Gets the engine's current fuel level
+     * @return double: the engine's current fuel level
+     */
     public double getCurrentFuel(){
         return this.currentFuelLevel;
     }
 
+    /**
+     * Gets the engine's maximum fuel level
+     * @return double: the engine's maximum fuel evel
+     */
     public double getMaxFuel(){
         return this.maxFuelLevel;
     }
 
+    /**
+     * Gets the type of fuel the engine uses
+     * @return STEAM/INTERNAL COMBUSTION/ELECTRIC/OTHER: the engine's fuel type
+     */
     public FuelType getFuelType(){
         return this.f;
     }
 
+    /**
+     * Reduces the current fuel level (if it can), prints some running messages, and checks if there is fuel left
+     * @return T/F: whether or not there is fuel left in the engine
+     */
     public Boolean go(){ 
         if (this.currentFuelLevel == 0){
             System.out.println("Error: The engine cannot run because there is no fuel remaining.");
