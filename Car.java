@@ -80,7 +80,30 @@ public class Car implements CarRequirements{
     }
 
     public static void main(String[] args) {
-        
+        // Car c = new Car(10);
+        // ArrayList<Passenger> roster = new ArrayList<>();
+        // roster.add(new Passenger("Lucy"));
+        // roster.add(new Passenger("M"));
+        // roster.add(new Passenger("Frankie"));
+        // roster.add(new Passenger("Aidan"));
+        // roster.add(new Passenger("Ella"));
+        // roster.add(new Passenger("Sriya"));
+        // roster.add(new Passenger("Ash"));
+        // roster.add(new Passenger("Sreeja"));
+        // roster.add(new Passenger("Riva"));
+        // roster.add(new Passenger("Liv"));
+        // System.out.println("Capacity: " + c.getCapacity());
+        // for(int i = 0; i < roster.size(); i++){
+        //     System.out.println("Current seats remaining: " + c.seatsRemaining());
+        //     roster.get(i).boardCar(c);
+        // }
+        // System.out.println("\nMANIFEST: ");
+        // c.printManifest();
+        // for(int i = 0; i < roster.size(); i++){
+        //     roster.get(i).getOffCar(c);
+        // }
+        // System.out.println("\nMANIFEST: ");
+        // c.printManifest();
     }
 
 }
