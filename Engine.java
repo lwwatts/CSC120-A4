@@ -52,8 +52,8 @@ public class Engine implements EngineRequirements{
      * @return T/F: whether or not there is fuel left in the engine
      */
     public Boolean go(){ 
-        if (this.currentFuelLevel == 0){
-            System.out.println("Error: The engine cannot run because there is no fuel remaining.");
+        if (this.currentFuelLevel < (this.maxFuelLevel/4)){
+            System.out.println("Error: The engine cannot run because there is not enough fuel remaining.");
             return false;
         }
         this.currentFuelLevel -= (this.maxFuelLevel / 4);
@@ -69,6 +69,21 @@ public class Engine implements EngineRequirements{
     }
 
     public static void main(String[] args) {
-        
+        // Engine testEngine = new Engine(FuelType.ELECTRIC, 90, 100);
+        // System.out.println("Fuel type: " + testEngine.getFuelType());
+        // System.out.println("Max Fuel: " + testEngine.getMaxFuel());
+        // System.out.println("Current fuel: " + testEngine.getCurrentFuel());
+        // testEngine.go();
+        // testEngine.go();
+        // testEngine.go();
+        // testEngine.go();
+        // testEngine.refuel();
+        // testEngine.go();
+        // testEngine.go();
+        // testEngine.go();
+        // testEngine.go();
+        // testEngine.go();
+        // testEngine.refuel();
+        // System.out.println("Current fuel: " + testEngine.getCurrentFuel());
     }
 }
