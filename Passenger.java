@@ -1,3 +1,5 @@
+// import java.util.ArrayList;
+
 public class Passenger implements PassengerRequirements{
     
     private String name;
@@ -47,6 +49,25 @@ public class Passenger implements PassengerRequirements{
     }
 
     public static void main(String[] args) {
-        
+        // Car c = new Car(10);
+        // ArrayList<Passenger> roster = new ArrayList<>();
+        // roster.add(new Passenger("Lucy"));
+        // roster.add(new Passenger("M"));
+        // roster.add(new Passenger("Frankie"));
+        // roster.add(new Passenger("Aidan"));
+        // roster.add(new Passenger("Ella"));
+        // roster.add(new Passenger("Sriya"));
+        // roster.add(new Passenger("Ash"));
+        // roster.add(new Passenger("Sreeja"));
+        // roster.add(new Passenger("Riva"));
+        // roster.add(new Passenger("Sarah"));
+        // roster.add(new Passenger("Liv"));
+        // for(int i = 0; i < roster.size(); i++){
+        //     System.out.println(roster.get(i));
+        //     roster.get(i).boardCar(c);
+        // }
+        // for(int i = 0; i < roster.size(); i++){
+        //     roster.get(i).getOffCar(c);
+        // }
     }
 }
